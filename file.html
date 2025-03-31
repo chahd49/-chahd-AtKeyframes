@@ -109,6 +109,20 @@
     transform-origin: 100% 0%;
     }
 
+
+    .right-arm9 {
+    background: black;
+    width: 20%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    animation: rightarmfunction9 10s infinite;
+    /* animation-iteration-count: 10; */
+    transform-origin: 100% 0%;
+    }
+
     @keyframes rightarmfunction {
 
     0% {
@@ -398,6 +412,45 @@
     }
 
 
+
+        @keyframes rightarmfunction9 {
+
+        0% {
+            transform: rotate(180deg);
+        }
+
+        16.4% {
+            background: rgb(132, 140, 211);
+            
+        }
+
+        20.5% {
+            transform: translate(14em, -3em);
+        }
+
+        25.5% {
+            background: rgb(142, 204, 140);
+            transform: rotate(153deg);
+            transform: translate(14em, -3em);
+        }
+
+        30.5% {
+            transform: translate(-14em, 3em);
+        }
+
+        75% {
+            background: rgb(230, 140, 140);
+            transform: translate(14em, -3em);
+        }
+
+        100% {
+            /* transform: rotate(180deg); */
+            background: rgb(211, 230, 140);
+            transform: translate(14em, -3em);
+        }
+
+    }
+
 </style>
 
 <style>
@@ -474,7 +527,7 @@
 <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
     <div style="display:inline-block;
     font-size: 50px;">Section 3</div>
-    <div style="display:inline-block;align-items: center; width:40px; height:120px; background: white"></div>
+    <div style="display:inline-block;align-items: center; width:40px; height:120px; background: white" class="right-arm9"></div>
 </div>
 <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
     <div style="display:inline-block; font-size: 50px;">Footer</div>
