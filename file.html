@@ -70,6 +70,45 @@
     transform-origin: 100% 0%;
     }
 
+    .right-arm6 {
+    background: black;
+    width: 20%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    animation: rightarmfunction6 10s infinite;
+    /* animation-iteration-count: 10; */
+    transform-origin: 100% 0%;
+    }
+
+    .right-arm7 {
+    background: black;
+    width: 20%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    animation: rightarmfunction7 10s infinite;
+    /* animation-iteration-count: 10; */
+    transform-origin: 100% 0%;
+    }
+
+    .right-arm8 {
+    background: black;
+    width: 20%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    animation: rightarmfunction8 10s infinite;
+    /* animation-iteration-count: 10; */
+    transform-origin: 100% 0%;
+    }
+
     @keyframes rightarmfunction {
 
     0% {
@@ -218,7 +257,7 @@
     }
 
     16.4% {
-
+        background: rgb(216, 206, 64);
         transform: rotate(-250deg);
     }
 
@@ -227,6 +266,7 @@
     }
 
     25.5% {
+        background: rgb(255, 82, 120);
         transform: rotate(153deg);
     }
 
@@ -235,6 +275,7 @@
     }
 
     75% {
+        background: rgb(82, 255, 232);
         transform: rotate(360deg);
     }
 
@@ -243,6 +284,119 @@
     }
 
 }
+
+        @keyframes rightarmfunction6 {
+
+        0% {
+            transform: rotate(1864deg);
+        }
+
+        16.4% {
+            background: rgb(163, 82, 255);
+            transform: rotate(51deg);
+        }
+
+        20.5% {
+            background: rgb(172, 7, 7);
+            transform: rotate(49deg);
+        }
+
+        25.5% {
+            background: rgb(255, 82, 197);
+            transform: rotate(999deg);
+        }
+
+        30.5% {
+            background: rgb(255, 187, 240);
+            transform: rotate(1863deg);
+        }
+
+        75% {
+            background: rgb(73, 5, 2);
+            transform: rotate(41deg);
+        }
+
+        100% {
+            
+            transform: rotate(111deg);
+        }
+
+    }
+
+        @keyframes rightarmfunction7 {
+
+        0% {
+            transform: rotate(180deg);
+        }
+
+        16.4% {
+            background: rgb(216, 163, 64);
+            transform: rotate(-250deg);
+        }
+
+        20.5% {
+            transform: rotate(800deg);
+        }
+
+        25.5% {
+            background: rgb(82, 255, 154);
+            transform: rotate(153deg);
+        }
+
+        30.5% {
+            transform: rotate(88deg);
+        }
+
+        75% {
+            background: rgb(255, 82, 82);
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
+
+    }
+
+
+        @keyframes rightarmfunction8 {
+
+        0% {
+            transform: rotate(180deg);
+        }
+
+        16.4% {
+            background: rgb(132, 140, 211);
+            transform: rotate(-250deg);
+        }
+
+        20.5% {
+            transform: rotate(800deg);
+        }
+
+        25.5% {
+            background: rgb(142, 204, 140);
+            transform: rotate(153deg);
+            transform: translate(-34em, -76em);
+        }
+
+        30.5% {
+            transform: rotate(88deg);
+        }
+
+        75% {
+            background: rgb(230, 140, 140);
+            transform: rotate(360deg);
+        }
+
+        100% {
+            /* transform: rotate(180deg); */
+            background: rgb(211, 230, 140);
+            transform: translate(-34em, -76em);
+        }
+
+    }
+
 
 </style>
 
@@ -253,24 +407,24 @@
             animation-play-state: running
         }
 
-       @keyframes geeks2 {
+        @keyframes geeks2 {
             0% {
-                background: rgb(255, 92, 119);
+                background: rgb(193, 16, 247);
                 border-radius: 0%;
             }
 
             25% {
-                background: rgb(189, 175, 150);
+                background: rgb(241, 237, 23);
                 border-radius: 50%;
             }
 
             50% {
-                background: rgb(47, 0, 109);
+                background: rgb(255, 3, 179);
                 border-radius: 50%;
             }
 
             100% {      
-                background: rgb(85, 0, 14);
+                background: rgb(228, 144, 158);
                 border-radius: 0%;
             }
         }
@@ -306,16 +460,16 @@
 <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
     <div style="display:inline-block;
     font-size: 50px;">navbar</div>
-    <div style="display:inline-block;align-items: center; width:30px; height:200px; background: blue"></div>
+    <div style="display:inline-block;align-items: center; width:30px; height:200px; background: blue" class="right-arm6"></div>
 </div>
 <div style="background: green; width: 100%; text-align: center;padding: 200px 0;">
     <div style="display:inline-block;font-size: 50px;">Place For Introdctory Image/Video</div>
-    <div style="display:inline-block;align-items: center; width:90px; height:60px; background: black"></div>
+    <div style="display:inline-block;align-items: center; width:90px; height:60px; background: black" class="right-arm7"></div>
 </div>
 <div style="background: blue; width: 50%; float: right; text-align: center;padding: 200px 0;">
     <div style="display:inline-block;
     font-size: 50px;">Section 2a</div>
-    <div style="display:inline-block;align-items: center; width:60px; height:120px; background: red"></div>
+    <div style="display:inline-block;align-items: center; width:60px; height:120px; background: red" class="right-arm8"></div>
 </div>
 <div style="background: red; width: 50%; text-align: center;padding: 200px 0;">
     <div style="display:inline-block;
