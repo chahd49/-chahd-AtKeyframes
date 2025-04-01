@@ -123,6 +123,20 @@
     transform-origin: 100% 0%;
     }
 
+
+    .right-arm10 {
+    background: black;
+    width: 20%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    display: inline-block;
+    animation: rightarmfunction10 10s infinite;
+    /* animation-iteration-count: 10; */
+    transform-origin: 100% 0%;
+    }
+
     @keyframes rightarmfunction {
 
     0% {
@@ -451,6 +465,47 @@
 
     }
 
+
+
+
+        @keyframes rightarmfunction10 {
+
+        0% {
+            transform: rotate(180deg);
+        }
+
+        16.4% {
+            background: rgb(211, 206, 132);
+            
+        }
+
+        20.5% {
+            transform: translate(14em, -3em);
+        }
+
+        25.5% {
+            background: rgb(83, 47, 117);
+            transform: rotate(153deg);
+            transform: translate(14em, -3em);
+        }
+
+        30.5% {
+            transform: translate(-14em, 3em);
+        }
+
+        75% {
+            background: rgb(255, 0, 0);
+            transform: translate(14em, -3em);
+        }
+
+        100% {
+            /* transform: rotate(180deg); */
+            background: rgb(25, 12, 206);
+            transform: translate(14em, -3em);
+        }
+
+    }
+
 </style>
 
 <style>
@@ -510,7 +565,8 @@
 <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
     <div style="display:inline-block; font-size: 50px;">Footer</div>
     <div style="display:inline-block;align-items: center; width:200px; height:100px; background: green" class="right-arm5"></div>
-</div>
+</div> <button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
+<p>
 <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
     <div style="display:inline-block;
     font-size: 50px;">navbar</div>
@@ -532,5 +588,5 @@
 </div>
 <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
     <div style="display:inline-block; font-size: 50px;">Footer</div>
-    <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green"></div>
+    <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green" class="right-arm10"></div>
 </div>
