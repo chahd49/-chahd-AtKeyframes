@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 <style>
 
     .right-arm {
@@ -565,7 +574,7 @@
 <div style="background: orange; width: 100%; text-align: center;padding: 100px 0;">
     <div style="display:inline-block; font-size: 50px;">Footer</div>
     <div style="display:inline-block;align-items: center; width:200px; height:100px; background: green" class="right-arm5"></div>
-</div> <button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
+</div><button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
 <p>
 <div style="background: red; width: 100%; text-align: center;padding: 5px 0;">
     <div style="display:inline-block;
@@ -590,3 +599,28 @@
     <div style="display:inline-block; font-size: 50px;">Footer</div>
     <div style="display:inline-block;align-items: center; width:120px; height:40px; background: green" class="right-arm10"></div>
 </div>
+
+
+<script>
+    var rightarmfunction5 = document.getElementsByClassName('right-arm5')[0];
+    var running = false;
+
+    var toggleTransition = function() {
+    if(!running) 
+    { 
+        rightarmfunction5.classList.add('horizTranslate');
+    } else {
+        rightarmfunction5.classList.remove('horizTranslate'); 
+    }  
+
+    running = !running;
+}
+
+</script>
+
+    
+</body>
+</html>
+
+
+
